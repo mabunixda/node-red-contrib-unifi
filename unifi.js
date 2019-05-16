@@ -317,6 +317,18 @@ module.exports = function(RED) {
 					sendData(authorizeGuest_data);
 					}
 				});
+			} else if (command == 'cleardpi' {
+				controller.clearDPIStatus(site, function (err, data) {
+					if (err) {
+						console.log('ERROR: ' + err);
+						node.status({
+							fill: "red",
+							shape: "dot",
+							text: err
+						});
+						return;
+					}
+				});
 			} else {
 				controller.logout();
 				node.status({
