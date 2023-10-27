@@ -5,7 +5,7 @@
   "main": "unifi.js",
   "dependencies": {
     "tough-cookie": "^4.0.0",
-    "axios": "^0.27.2",
+    "axios": "^1.6.0",
     "http-cookie-agent": "^4.0.1"
   },
   "node-red": {
